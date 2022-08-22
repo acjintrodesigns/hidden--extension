@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <h1>Contact Page</h1>
+        <ul>
+            <li><a href="/">Home Page</a></li>
+            <li><a href="/about">About </a></li>
+            <li><a href="/services">Service</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        
+
+
+                    <div class="form-container">
+              <form
+                id="contactForm"
+                autocomplete="off"
+                action="/send"
+                method="POST"
+              >
+                <p class="single-form">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="name">Name</label>
+                </p>
+
+                <p class="single-form">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="surname">Surname</label>
+                </p>
+
+                <p class="single-form">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="company"
+                    name="company"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="company">Company </label>
+                </p>
+
+                <p class="single-form">
+                  <input
+                    class="form-control"
+                    type="number"
+                    maxlength="10"
+                    id="phone"
+                    name="phone"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="phone">Phone </label>
+                </p>
+
+                <p class="single-form">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="email">Email</label>
+                </p>
+
+                <p class="single-form">
+                  <!-- <label for="email">Email</label> -->
+                  <select
+                    class="form-item"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option selected>Please Select ...</option>
+                    <option name="tester1" id="tester1">
+                      tester 1
+                    
+                    <option name="tester2" id="tester2">
+                      tester 2
+                    </option>
+                    <option name="tester3" id="tester3">
+                      tester 3
+                    </option>
+                  </select>
+                </p>
+
+                <p class="single-form">
+                  <textarea
+                    class=" "
+                    id="message"
+                    name="message"
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                </p>
+
+                <button id="submit" class=" ">
+                  <span class="btn__text">Send</span>
+                </button>
+              </form>
+            </div>
+        <script src="" async defer></script>
+    </body>
+</html>
